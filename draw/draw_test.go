@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dominikbraun/graph"
+	"github.com/rudderlabs/graph"
 )
 
 func TestGenerateDOT(t *testing.T) {

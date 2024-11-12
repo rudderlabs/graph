@@ -21,12 +21,12 @@ and visualizing them.
 
 > Status: Because `graph` is in version 0, the public API shouldn't be considered stable.
 
-> This README may contain unreleased changes. Check out the [latest documentation](https://pkg.go.dev/github.com/dominikbraun/graph).
+> This README may contain unreleased changes. Check out the [latest documentation](https://pkg.go.dev/github.com/rudderlabs/graph).
 
 # Getting started
 
 ```
-go get github.com/dominikbraun/graph
+go get github.com/rudderlabs/graph
 ```
 
 # Quick examples
@@ -73,7 +73,7 @@ _ = g.AddEdge(3, 4)
 
 ## Create a graph of a custom type
 
-To understand this example in detail, see the [concept of hashes](https://pkg.go.dev/github.com/dominikbraun/graph#hdr-Hashes).
+To understand this example in detail, see the [concept of hashes](https://pkg.go.dev/github.com/rudderlabs/graph#hdr-Hashes).
 
 ```go
 type City struct {
@@ -283,8 +283,8 @@ package main
 import (
 	"os"
 
-	"github.com/dominikbraun/graph"
-	"github.com/dominikbraun/graph/draw"
+	"github.com/rudderlabs/graph"
+	"github.com/rudderlabs/graph/draw"
 )
 
 func main() {
@@ -394,11 +394,11 @@ graph with it:
 g := graph.NewWithStore(graph.IntHash, myStore)
 ```
 
-To implement the `Store` interface appropriately, take a look at the [documentation](https://pkg.go.dev/github.com/dominikbraun/graph#Store).
-[`graph-sql`](https://github.com/dominikbraun/graph-sql) is a ready-to-use SQL store implementation.
+To implement the `Store` interface appropriately, take a look at the [documentation](https://pkg.go.dev/github.com/rudderlabs/graph#Store).
+[`graph-sql`](https://github.com/rudderlabs/graph-sql) is a ready-to-use SQL store implementation.
 
 # Documentation
 
-The full documentation is available at [pkg.go.dev](https://pkg.go.dev/github.com/dominikbraun/graph).
+The full documentation is available at [pkg.go.dev](https://pkg.go.dev/github.com/rudderlabs/graph).
 
 **Are you using graph? [Check out the graph user survey.](https://forms.gle/MLKUZKMeCRxTfj4v9)**
